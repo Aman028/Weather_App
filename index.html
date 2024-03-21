@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="heading">WEATHER APP</h1>
+        </div>
+        
+        <div class="tab">
+            <p yourweather class="tabwa tabwas">Your Weather</p>
+            <p searchweather class="tabwa">Search Weather</p>
+        </div>
+        <div class="grant grantstyle" grantdiv>
+            <img src="location.png" width="80"
+            height="80"
+            loading="lazy" class="locationimg"/>
+            <h2 class="grantheader">Grant Location Access</h2>
+            <p class="grantdesc">Allow access to get weather information</p>
+            <button grantt class="grantbtn">GRANT ACCESS</button>
+        </div>
+        <div class="loader loaderr">
+            <img src="loading.gif" width="150" height="150"/>
+            <p class="loaderdesc">Loading</p>
+        </div>
+        <div class="owndata meradata" info>
+            <div class="citynameflag">
+                <p cityname></p>
+                <img flag />
+            </div>
+            <p class="envstyle" env></p>
+            <img class="imgenv" imgenv/>
+            <h3 class="temp" temp></h3>
+            <div class="photo">
+                <div class="wind">
+                    <img src="wind.png"/>
+                    <p class="winddesc">WINDSPEED</p>
+                    <P class="winddyn" windspeed></P>
+                </div>
+                <div class="wind">
+                    <img src="humidity.png"/>
+                    <p class="winddesc">HUMIDITY</p>
+                    <P class="winddyn" humidity></P>
+                </div>
+                <div class="wind">
+                    <img src="cloud.png"/>
+                    <p class="winddesc">CLOUDS</p>
+                    <P class="winddyn" clouds></P>
+                </div>
+            </div>
+        </div>
+        <div class="searchdata khozodata" searchdiv>
+            <form class="searchform">
+                <input type="text" placeholder="Search for city..." searchinput/>
+                <button searchbtn class="btn">
+                    <img src="search.png" width="20"
+                    height="20"
+                    loading="lazy"/>
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
