@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Merriweather Sans", sans-serif;
+}
+:root {
+    --colorDark1: #112d4e;
+    --colorDark2: #3f72af;
+    --colorLight1: #dbe2ef;
+    --colorLight2: #f9f7f7;
+}
+
+.wrapper{
+    width:100vw;
+    height:100vh;
+    color:var(--colorLight2);
+    background-color: #112d4e;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+.heading{
+    text-align: center;
+    padding-top: 20px;
+}
+.tab{
+    max-width: 550px;
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+    margin-top: 4rem;
+}
+.tabwa{
+    cursor:pointer;
+    font-size:0.875rem;
+    letter-spacing: 1.75px;
+    padding:5px 8px;
+}
+
+.tabwa.tabwas{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+.grantstyle{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:3rem;
+    gap:1rem;
+}
+.grantheader{
+    font-weight: 600;
+    font-size:1.75rem;
+}
+.grantdesc{
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.75px;
+}
+.grantbtn{
+    all:unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--colorDark2);
+    cursor:pointer;
+    padding:10px 30px;
+}
+.grant{
+    display:none;
+}
+.grant.active{
+    display:flex;
+}
+.loaderr{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loader{
+    display:none;
+}
+.loader.active{
+    display:flex;
+}
+.loaderdesc{
+    text-transform: uppercase;
+}
+.owndata{
+    display:none;
+}
+.owndata.active{
+    display:flex;
+}
+.meradata{
+    margin-top:4rem;
+    /* display:flex; */
+    flex-direction:column;
+    align-items:center;
+    gap:0.5rem;
+}
+.citynameflag
+{
+    display:flex;
+    gap: 0 0.5rem;
+}
+.citynameflag p{
+    font-size:1.5rem;
+    font-weight:200;
+}
+.citynameflag img{
+    width:30px;
+    height:30px;
+}
+.envstyle{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.imgenv{
+    width:70px;
+    height:70px;
+}
+.temp{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.photo{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    gap: 10px 20px;
+    margin: 1.6rem auto 0;
+    flex-wrap: wrap;
+}
+.wind{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 30%;
+    max-width: 200px;
+    gap: 5px 0;
+}
+.winddesc{
+    font-size: 1rem;
+    font-size: 600;
+    text-transform: uppercase;
+}
+.winddyn{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+.wind img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.searchform.active
+{
+    display:flex;
+}
+.searchform{
+    width:90%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    margin-top:3rem;
+    display:none;
+}
+.searchform input{
+     all: unset;
+    width: calc(100% - 80px);
+    height:40px;
+    padding: 0 20px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+    
+}
+
+.searchform input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.searchfrom input:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.searchform .btn{
+    all:unset;
+    width: 40px;
+    height: 40px;
+    background-color: var(--colorDark2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: unset;
+    border-radius: 100%;
+    cursor:pointer;
+}
+
+.searchfrom .btn img{
+    object-fit: contain;
+}
